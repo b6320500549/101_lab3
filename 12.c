@@ -3,7 +3,9 @@ int main()
 {
     int k,x = 2;
     scanf("%d", &k);
-    while(k != 1)
+    if(k>0&&k<=1000)
+    {
+         while(k != 1)
         {
         while(k % x == 0){
             printf("%d\n", x);
@@ -11,7 +13,9 @@ int main()
         }
         x++;
         }
-    printf("%d\n", k-1);
+    printf("%d\n",0);
+    }
+
         return 0;
 }
 
