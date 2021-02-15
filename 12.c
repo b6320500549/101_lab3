@@ -1,21 +1,22 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    int k,x = 2;
-    scanf("%d", &k);
-    if(k>0&&k<=1000)
-    {
-         while(k != 1)
-        {
-        while(k % x == 0){
-            printf("%d\n", x);
-            k = k / x;
-        }
-        x++;
-        }
-    printf("%d\n",0);
-    }
-
-        return 0;
+int i=0,num,k,j,time[48]={0},max=0,x;
+scanf("%d",&num);
+for(i=0;i<num;i++)
+{
+scanf("%d %d",&k,&j);
+time[k-1]+=j;
 }
+for(i=0;i<48;i++)
+{
+if(max<time[i])
+{
+max=time[i];
+x=i;
+}
+}
+printf("%d %d",x+1,time[x]);
+}
+
 
