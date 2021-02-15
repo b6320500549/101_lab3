@@ -22,6 +22,6 @@ int main()
         printf("%d\n",0);
     }
 
-        return 0;
+        return 0; //à«¿ä¿Åì¼Ô´µÍ¹áÃ¡à«¿à»ç¹12
 }
 
